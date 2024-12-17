@@ -6,11 +6,11 @@ import FooterComponent from './shared/FooterComponent.vue';
 
 
 export default {
-   nome: 'App',
-   components: {
-      HeaderComponent,
-      FooterComponent,
-   }
+  nome: 'App',
+  components: {
+    HeaderComponent,
+    FooterComponent,
+  }
 }
 
 </script>
@@ -18,18 +18,24 @@ export default {
 
 
 <template>
-  
-   <!--? HEADER -->
-   <HeaderComponent />
-   
-   <!--? CONTENT -->
-   <router-view></router-view>
-   
-   <!--? FOOTER -->
-   <FooterComponent />
+
+  <!--? HEADER -->
+  <HeaderComponent />
+
+  <!--? CONTENT -->
+  <div class="topbar">
+    <router-view></router-view>
+  </div>
+
+  <!--? FOOTER -->
+  <FooterComponent />
 
 
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.topbar {
+  margin-top: 150px;
+}
+</style>
