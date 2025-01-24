@@ -1,0 +1,19 @@
+{
+  "logoMenu": "../../public/favicon/paratore-favicon.svg",
+  "menus": ["Home", "Contact"],
+  "socialIcons": [
+    {
+      "image": "../../public/Instagram.svg",
+      "class": "instagram",
+      "url": "https://www.instagram.com/byhyons/",
+      "name": "Instagram"
+    },
+    {
+      "image": "../../public/github.svg",
+      "class": "github",
+      "url": "https://github.com/byHYONS",
+      "name": "Github"
+    }
+  ],
+  "policies": ["Privacy", "Cookie"]
+}

@@ -120,11 +120,12 @@ header {
 
 
   .header-float {
+    padding: 15px 0;
+
     .menubar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
     }
 
     position: fixed;
@@ -142,6 +143,7 @@ header {
     padding: 10px 45px;
     transition: transform 0.4s ease-out,
     visibility 0.4s ease-out;
+    z-index: 120;
 
     .logo {
       display: flex;
