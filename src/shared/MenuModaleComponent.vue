@@ -26,7 +26,7 @@ export default {
     <div class="top-menu">
       <ul>
         <li @click="closeMenu" v-for="(menu, index) in menuLabel.menus" :kay="index">
-          <router-link :to="{ name: `${menu.toLowerCase()}` }"> {{ menu }} </router-link>
+          <router-link class="hover-ball" :to="{ name: `${menu.toLowerCase()}` }"> {{ menu }} </router-link>
         </li>
       </ul>
     </div>
@@ -36,7 +36,7 @@ export default {
       <div class="policy">
         <ul>
           <li v-for="(policy, index) in menuLabel.policies" :key="index" @click="closeMenu">
-            <a :href="`#${policy.toUpperCase()}`" target="_blank" rel="noopener noreferrer" translate="no"> {{ policy }}
+            <a class="hover-link" :href="`#${policy.toUpperCase()}`" target="_blank" rel="noopener noreferrer" translate="no"> {{ policy }}
             </a>
           </li>
         </ul>
@@ -51,8 +51,6 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .menu-modale {
-
-  border: 1px solid red;
   color: #fff;
   padding: 25px 45px;
 

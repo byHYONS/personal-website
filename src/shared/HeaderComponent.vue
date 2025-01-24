@@ -86,20 +86,7 @@ export default {
         <!-- logo sito -->
         <div class="logo">
           <router-link :to="{ name: 'home' }" class="link-logo">
-            <svg translate="no" width="100%" height="100%" viewBox="0 0 6513 1955" version="1.1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-              xmlns:serif="http://www.serif.com/"
-              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><text x="1892.04px"
-                y="1532.67px"
-                style="font-family:'STHeiti';font-size:833.333px;fill:#161f28;stroke:#cad0d9;stroke-width:4.17px;">PARATORE</text>
-              <rect x="716.429" y="821.35" width="483.829" height="762.946"
-                style="fill:#cad0d9;stroke:#fff;stroke-width:3.96px;stroke-linecap:square;stroke-miterlimit:1.5;" />
-              <path
-                d="M340.796,1573.52l235.675,0.033l1.017,-343.446l751.716,-356.608l0.529,-310.875l-355.087,-0.371l0.671,902.483l698.975,0.729l0.266,-300.27l-344.391,-216.105l0.196,623.992l676.816,0.425"
-                style="fill:none;stroke:#161f28;stroke-width:33.33px;stroke-linecap:square;stroke-miterlimit:1.5;" />
-              <text x="1959.62px" y="721.608px"
-                style="font-family:'STHeiti';font-size:416.667px;fill:#161f28;">SAMUELE</text>
-            </svg>
+            <img src="/public/favicon/samuele-paratore-logo.svg" alt="Logo Samuele Paratore">
           </router-link>
         </div>
 
@@ -136,7 +123,7 @@ header {
     width: 90%;
     height: 100px;
     border-radius: 55px;
-    background-color: #f2f;
+    background-color: $menu;
     box-shadow: 5px 5px 5px rgba(80, 80, 80, 0.3);
     color: #fff;
     opacity: .9;
@@ -154,7 +141,8 @@ header {
       .link-logo {
         padding: 0 25px;
 
-        svg {
+        img {
+          height: 90%;
           margin-left: -10px;
           filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
           transition: transform 0.4s ease-out, filter 0.4s ease-out;

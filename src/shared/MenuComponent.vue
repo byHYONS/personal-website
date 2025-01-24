@@ -82,14 +82,14 @@ nav {
     width: 90%;
     min-height: 300px;
     border-radius: 55px;
-    background-color: #f2f;
+    background-color: $menu;
     box-shadow: 5px 5px 5px rgba(80, 80, 80, 0.3);
     transition: opacity .7s cubic-bezier(0.25, 0.1, 0.25, 1.0);
 
   }
 
   .modaleOn {
-    opacity: .9;
+    opacity: .95;
   }
 
 
@@ -108,10 +108,10 @@ nav {
     }
 
     .hamb-line {
-      height: 4px;
-      background-color: #000;
-      color: #000;
-      border-color: #000;
+      height: 3px;
+      background-color: $menu-hamburger;
+      color: $menu-hamburger;
+      border-color: $menu-hamburger;
       transition: width .5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
         opacity .9s cubic-bezier(0.25, 0.1, 0.25, 1.0);
     }
@@ -131,10 +131,10 @@ nav {
     .hamb-close {
       position: absolute;
       width: 100%;
-      height: 4px;
-      background-color: #000;
-      color: #000;
-      border-color: #000;
+      height: 3px;
+      background-color: $menu-hamburger;
+      color: $menu-hamburger;
+      border-color: $menu-hamburger;
       transition: transform .5s cubic-bezier(0.25, 0.1, 0.25, 1.0),
     }
 
