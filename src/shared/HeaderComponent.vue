@@ -86,7 +86,7 @@ export default {
         <!-- logo sito -->
         <div class="logo">
           <router-link :to="{ name: 'home' }" class="link-logo">
-            <img src="/public/favicon/samuele-paratore-logo.svg" alt="Logo Samuele Paratore">
+            <img class="img" src="/public/favicon/samuele-paratore-logo.svg" alt="Logo Samuele Paratore">
           </router-link>
         </div>
 
@@ -136,13 +136,17 @@ header {
       display: flex;
       justify-content: start;
       width: 100%;
-      height: 100%;
+      height: 75px;
 
       .link-logo {
         padding: 0 25px;
+        width: 100%;
+        height: 100%;
 
-        img {
-          height: 90%;
+        img.img {
+          height: 100%;
+          width: auto;
+          object-fit: contain;
           margin-left: -10px;
           filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
           transition: transform 0.4s ease-out, filter 0.4s ease-out;

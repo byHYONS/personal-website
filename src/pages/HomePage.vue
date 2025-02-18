@@ -1,12 +1,16 @@
 <script>
 
 import { store } from '../store';
-
+import CanvasBHY from '../components/CanvasComponent.vue';
 
 
 export default {
   nome: 'Home',
   props: {
+
+  },
+  components: {
+    CanvasBHY,
 
   },
   data() {
@@ -15,9 +19,6 @@ export default {
 
     }
   },
-  components: {
-
-  }
 }
 
 </script>

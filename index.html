@@ -1,26 +1,114 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <!-- favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  Favicon -->
     <link
       rel="icon"
       type="image/svg+xml"
       href="/public/favicon/samuele-paratore-favicon.svg"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title translate="no">Samuele Paratore</title>
+
+    <!--  Title & Meta Description per SEO -->
+    <title>Samuele Paratore - Esperto in [tuo settore]</title>
+    <meta
+      name="description"
+      content="Scopri il mondo di Samuele Paratore, esperto in [argomento principale]. Trova informazioni, articoli e contatti."
+    />
+    <meta
+      name="keywords"
+      content="Samuele Paratore, [keyword1], [keyword2], [keyword3]"
+    />
+    <meta name="author" content="Samuele Paratore" />
+
+    <!--  Meta Robots per indicizzazione -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.tuosito.it" />
+
+    <!--  Open Graph per Facebook, LinkedIn, WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Samuele Paratore - Esperto in [tuo settore]"
+    />
+    <meta
+      property="og:description"
+      content="Scopri il mondo di Samuele Paratore, esperto in [argomento principale]."
+    />
+    <meta
+      property="og:image"
+      content="https://www.tuosito.it/immagine-anteprima.jpg"
+    />
+    <meta property="og:url" content="https://www.tuosito.it" />
+    <meta property="og:site_name" content="Samuele Paratore" />
+
+    <!--  Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Samuele Paratore - Esperto in [tuo settore]"
+    />
+    <meta
+      name="twitter:description"
+      content="Scopri il mondo di Samuele Paratore, esperto in [argomento principale]."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.tuosito.it/immagine-twitter.jpg"
+    />
+    <meta name="twitter:site" content="@TuoHandleTwitter" />
+
+    <!--  JSON-LD Structured Data per SEO (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Samuele Paratore",
+            "url": "https://www.tuosito.it",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.tuosito.it/cerca?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Person",
+            "name": "Samuele Paratore",
+            "url": "https://www.tuosito.it",
+            "sameAs": [
+              "https://twitter.com/TuoHandleTwitter",
+              "https://www.linkedin.com/in/samuele-paratore",
+              "https://www.instagram.com/TuoInstagram"
+            ],
+            "jobTitle": "[Il tuo ruolo]",
+            "image": "https://www.tuosito.it/foto-profilo.jpg"
+          }
+        ]
+      }
+    </script>
+
+    <!--  Performance: Preload fonts & stylesheets -->
+    <link
+      rel="preload"
+      href="/public/fonts/custom-font.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/public/css/styles.css" />
   </head>
-  <!-- <body oncontextmenu="return false"> -->
-  <body class="debug">
+  <body>
     <!-- APP VUE -->
     <div id="overLay">
       <div id="set-overlay"></div>
     </div>
     <div id="app" v-cloak></div>
-    <!-- /APP VUE -->
 
-    <!-- project JavaScript -->
+    <!--  Project JavaScript -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

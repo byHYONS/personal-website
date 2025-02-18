@@ -43,7 +43,7 @@ export default {
 
 <template>
 
-  <nav>
+  <nav aria-label="Navigazione principale">
     <!--? nav bar -->
     <div class="hamb-icon" @click="toggleMenu">
       <div class="hamb-line hl-1" :class="{ isHidden: isMenuOpen }"></div>

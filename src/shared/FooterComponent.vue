@@ -21,46 +21,40 @@ export default {
 
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col col-xl-3 col-md-6 col-12">
-          <div class="logo-byhyons">
-            <router-link :to="{ name: 'home' }" class="navbar-brand d-flex align-items-center">
-              <div class="logo_byhyons mt-5">
-                <!--? SVG -->
-                <img src="/public/favicon/samuele-paratore-solo-logo.svg" alt="Samuele Paratore solo logo">
-              </div>
-            </router-link>
-            <!-- ? IINTESTAZIONE DITTA -->
-            <div class="credits">
-              <p class="mt-3"> <span class="headline">di Samuele Paratore</span> <br>
-                Varese • ITALY <br>
-                <small>PI 03654740129 • REA VA 372696</small>
-              </p>
-            </div>
-          </div>
+      <div class="row text-lg-start text-md-center text-sm-center text-center justify-content-center">
+        <div class="col-3 my-100 text-md-start text-center">
+          <img src="/public/favicon/samuele-paratore-solo-logo.svg" alt="Samuele Paratore solo logo">
         </div>
-        <div class="col-xl-3 col-md-6 col-12 align">
-          <p class="mt-5"> <span class="headline">Menu di Navigazione:</span> </p>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-100">
+          <p class=""> <span class="headline">Informazioni:</span> </p>
+          <p translate="no" class="mt-3">
+            <span class="fw-medium fs-5">geom. Samuele Paratore</span> <br>
+            Varese • ITALY <br>
+            <small>PI 03654740129 • REA VA 372696</small>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-100">
+          <p class=""> <span class="headline">Menu di Navigazione:</span> </p>
           <ul class="">
             <li class="nav-item" v-for="(menu, index) in footerLabel.menus" :key="index">
               <router-link class="hover-link" :to="{ name: `${menu.toLowerCase()}` }"> {{ menu }} </router-link>
             </li>
           </ul>
-
         </div>
-        <div class="col-xl-3 col-md-6 col-12 align">
-          <p class="mt-5"> <span class="headline">Autenticazione:</span> </p>
-
-        </div>
-        <div class="col-xl-3 col-md-6 col-12 align">
-          <p class="mt-5"> <span class="headline">Saguimi Su:</span> </p>
-          <div v-for="(social, index) in footerLabel.socialIcons" key="index">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-100">
+          <p class=""> <span class="headline">Saguimi Su:</span> </p>
+          <div class="d-flex flex-wrap justify-content-center  justify-content-lg-start gap-3"
+            v-for="(social, index) in footerLabel.socialIcons" key="index">
             <div class="logo-social" :class="social.class">
               <a :href="social.url" target="_blank" rel="noopener noreferrer">
                 <img :src="social.image" :alt="`Social: ${social.name}`">
               </a>
             </div>
           </div>
+        </div>
+        <div class="col-lg-12 my-5">
+          <hr class="text-white">
+          <p translate="no" class="mt-35 copyright">All Rights Reserved • byHYONS™ • © 2025</p>
         </div>
       </div>
     </div>
@@ -83,7 +77,10 @@ footer {
     padding: 0;
   }
 
-  
+  .copyright {
+    color: #bcbcbc;
+    font-weight: 100;
+  }
 
   img {
     width: 150px;

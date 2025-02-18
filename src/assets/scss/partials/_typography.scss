@@ -3,12 +3,18 @@
 -------------------------------- */
 @import './variables';
 
+//? import fonts:
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 //? typography:
 body {font-size: 24px;}
 
-h1, h2, h3, h4, h5, h6, {font-family: "Spectral", serif;}
+// h1, h2, h3, h4, h5, h6 {font-family: "Spectral", serif;}
+// a, p, li, small, button, form, table {font-family: "Rajdhani", sans-serif;}
 
-a, p, li, small, button, form, table {font-family: "Rajdhani", sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-family: "Josefin Sans", serif;}
+a, p, li, small, button, form, table {font-family: "Roboto", serif;}
 
 th {font-size: 24px;}
 td {font-size: 20px;}
