@@ -51,7 +51,7 @@ export default {
     initializeNavbar() {
       const currentScrollTop = window.scrollY;
 
-      if (currentScrollTop > 100) {
+      if (currentScrollTop > 250) {
         this.hideNavbar(); // Nasconde la navbar se si parte con uno scroll > 100px
       } else {
         this.showNavbar(); // Mostra la navbar se si parte con uno scroll <= 100px
@@ -122,10 +122,10 @@ header {
     margin: 0 auto;
     width: 90%;
     height: 100px;
-    border-radius: 55px;
-    background-color: $menu;
-    box-shadow: 5px 5px 5px rgba(80, 80, 80, 0.3);
-    color: #fff;
+    border-radius: 35px;
+    background-color: $color_01;
+    box-shadow: 3px 3px 5px rgba(80, 80, 80, 0.1);
+    color: $color_02;
     opacity: .9;
     padding: 10px 45px;
     transition: transform 0.4s ease-out,
@@ -182,11 +182,24 @@ header {
   }
 
   a {
-    color: $text1;
+    color: color_02;
 
     &:hover {
       font-weight: 600;
     }
   }
+}
+
+@media (max-width: 450px) {
+  header {
+    .header-float {
+      .logo {
+        .link-logo {
+          padding: 0;
+        }
+      }
+    }
+  }
+
 }
 </style>

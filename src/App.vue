@@ -4,8 +4,6 @@ import { store } from './store.js';
 import HeaderComponent from './shared/HeaderComponent.vue';
 import FooterComponent from './shared/FooterComponent.vue';
 
-
-
 export default {
   nome: 'App',
   components: {
@@ -29,19 +27,13 @@ export default {
   <HeaderComponent />
 
   <!--? CONTENT -->
-  <div class="topbar">
-    <router-view></router-view>
-  </div>
-
+  <router-view></router-view>
   <!--? FOOTER -->
+
   <FooterComponent />
 
 
 </template>
 
 
-<style lang="scss" scoped>
-.topbar {
-  margin-top: 150px;
-}
-</style>
+<style lang="scss" scoped></style>

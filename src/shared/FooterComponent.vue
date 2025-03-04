@@ -21,19 +21,23 @@ export default {
 
   <footer>
     <div class="container">
-      <div class="row text-lg-start text-md-center text-sm-center text-center justify-content-center">
-        <div class="col-3 my-100 text-md-start text-center">
+      <div class="row text-lg-start text-md-center text-sm-center text-center justify-content-center py-100">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12  w-md-auto my-5 text-md-start text-center">
           <img src="/public/favicon/samuele-paratore-solo-logo.svg" alt="Samuele Paratore solo logo">
+          <small class="legacy d-block mt-3 mx-auto mx-md-0 col-6 col-sm-7 col-md-8">All rights reserved and trademarks
+            registered.
+            The reproduction of any material contained within this website is strictly prohibited.</small>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-100">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-5">
           <p class=""> <span class="headline">Informazioni:</span> </p>
           <p translate="no" class="mt-3">
-            <span class="fw-medium fs-5">geom. Samuele Paratore</span> <br>
+            <span class="fw-normal fs-5">geom. Samuele Paratore</span> <br>
             Varese • ITALY <br>
+            info@samueleparatore.com <br>
             <small>PI 03654740129 • REA VA 372696</small>
           </p>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-100">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-5">
           <p class=""> <span class="headline">Menu di Navigazione:</span> </p>
           <ul class="">
             <li class="nav-item" v-for="(menu, index) in footerLabel.menus" :key="index">
@@ -41,7 +45,7 @@ export default {
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-100">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-5">
           <p class=""> <span class="headline">Saguimi Su:</span> </p>
           <div class="d-flex flex-wrap justify-content-center  justify-content-lg-start gap-3"
             v-for="(social, index) in footerLabel.socialIcons" key="index">
@@ -70,7 +74,7 @@ export default {
 
 
 footer {
-  background-color: $footer;
+  background-color: $color_01;
   min-height: 550px;
 
   ul {
@@ -78,7 +82,7 @@ footer {
   }
 
   .copyright {
-    color: #bcbcbc;
+    color: $color_07;
     font-weight: 100;
   }
 
@@ -91,6 +95,15 @@ footer {
     &:hover {
       transform: scale(1.05);
     }
+  }
+
+  small.legacy {
+    align-self: center;
+    color: $color_07;
+    font-size: 9px;
+    font-style: italic;
+    font-weight: 100;
+    opacity: .8;
   }
 
   .headline {
@@ -110,14 +123,14 @@ footer {
 
   p {
     font-size: 15px;
-    color: $text2;
+    color: $color_02;
   }
 
   .logo-social {
     transition: .3s;
 
     img {
-      filter: invert(100);
+      filter: invert(100) !important;
     }
 
     &:hover {
@@ -133,50 +146,10 @@ footer {
     width: 150px;
     margin-top: 10px;
   }
-}
 
-/* @media (max-width: 1200px) {
-
-  footer {
-    .container {
-      .row {
-        padding: 30px;
-
-        .col-12 {
-          text-align: center;
-          margin-bottom: 50px;
-
-          .logo-social {
-            width: 30%;
-            margin: 0 auto;
-          }
-        }
-      }
-
-    }
+  .linkedin {
+    width: 150px;
+    margin-top: 15px;
   }
-
 }
-
-@media (max-width: 767px) {
-
-  footer {
-    .container {
-      .row {
-        .col-12 {
-          margin-top: 50px;
-          text-align: center;
-          margin-bottom: 80px;
-
-          .logo-social {
-            width: 30%;
-            margin: 0 auto;
-          }
-        }
-      }
-
-    }
-  }
-
-} */
 </style>

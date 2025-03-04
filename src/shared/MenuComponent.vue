@@ -81,9 +81,9 @@ nav {
     margin: 0 auto;
     width: 90%;
     min-height: 300px;
-    border-radius: 55px;
-    background-color: $menu;
-    box-shadow: 5px 5px 5px rgba(80, 80, 80, 0.3);
+    border-radius: 35px;
+    background-color: $color_01;
+    /*box-shadow: 5px 5px 5px rgba(80, 80, 80, 0.3);*/
     transition: opacity .7s cubic-bezier(0.25, 0.1, 0.25, 1.0);
 
   }
@@ -109,9 +109,9 @@ nav {
 
     .hamb-line {
       height: 3px;
-      background-color: $menu-hamburger;
-      color: $menu-hamburger;
-      border-color: $menu-hamburger;
+      background-color: $color_02;
+      color: $color_02;
+      border-color: $color_02;
       transition: width .5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
         opacity .9s cubic-bezier(0.25, 0.1, 0.25, 1.0);
     }
@@ -132,9 +132,9 @@ nav {
       position: absolute;
       width: 100%;
       height: 3px;
-      background-color: $menu-hamburger;
-      color: $menu-hamburger;
-      border-color: $menu-hamburger;
+      background-color: $color_02;
+      color: $color_02;
+      border-color: $color_02;
       transition: transform .5s cubic-bezier(0.25, 0.1, 0.25, 1.0),
     }
 
@@ -154,6 +154,15 @@ nav {
 
     .isVisible.hc-2 {
       transform: rotate(-40deg);
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  nav {
+    .hamb-icon {
+      width: 40px;
+      height: 30px;
     }
   }
 }

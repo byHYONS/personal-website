@@ -2,28 +2,37 @@
          *   VARIABLES
 -------------------------------- */
 
-//? variables background:
-$black: #2c2c2c;
-$gray: #5e5e5e;
-$red: #de0f0f;
+$color_01: #050A13;
+$color_02: #F2F2F2;
+$color_03: #8F1FBF;
+$color_04: #A426A6;
+$color_05: #D9487D;
+$color_06: #EC5925;
+$color_07: #bcbcbc;
+$gadient_01: linear-gradient(65deg,
+    hsl(29deg 91% 54% / 0.9) 0%,
+    hsl(11deg 98% 64% / 0.9) 9%,
+    hsl(352deg 92% 64% / 0.9) 18%,
+    hsl(336deg 74% 59% / 0.9) 27%,
+    hsl(313deg 49% 56% / 0.9) 36%,
+    hsl(256deg 56% 67% / 0.9) 45%,
+    hsl(212deg 80% 63% / 0.9) 55%,
+    hsl(195deg 83% 49% / 0.9) 64%,
+    hsl(186deg 100% 41% / 0.9) 73%,
+    hsl(176deg 100% 38% / 0.9) 82%,
+    hsl(155deg 49% 51% / 0.9) 91%,
+    hsl(105deg 39% 57% / 0.9) 100%);
+$gradient_02: linear-gradient(45deg, rgba(242, 94, 19, 1) 25%, rgba(146, 12, 242, 1) 75%);
+$gradient_03: linear-gradient(135deg, rgba(153, 145, 47, 1) 0%, rgba(47, 131, 153, 1) 25%, rgba(157, 33, 191, 1) 55%, rgba(217, 72, 125, 1) 80%);
 
-//? variables background:
-$body: #F2F2F2;
-$footer: #161F28;
-$menu: #161F28;
-$menu-hamburger: #F2F2F2;
-$btn: #D96055;
-$bg_jolly: #AEBCBF;
-$table: #fff;
+.gradient-text {
+  background: $gradient_02;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-//? colori text:
-$hover-link: #efebeb;
-$h_1: #BF0404;
-$h_2: #F2F2F2;
-$h_3: #263B40;
-$text1: #2c2c2c;
-$text2: #F2F2F2;
-$text3: #263B40;
+
+
 
 //? shodow:
 $shodow: #000;
@@ -36,8 +45,11 @@ $show: #0066ff;
 $edit: #ffcc00;
 $delete: #D96055;
 
-//? background color:
-.bg-body {background-color: $body;}
-.bg-footer {background-color: $footer;}
-.bg-btn {background-color: $btn;}
-.bg-jolly {background-color: $bg_jolly;}
+
+
+/*
+Nero Profondo	#0a0c10	rgb(10, 12, 16)	hsl(220, 23%, 5%)
+Nero Bluastro	#070A0F	rgb(7, 10, 15)	hsl(220, 37%, 4%)
+Nero Notturno	#080B12	rgb(8, 11, 18)	hsl(225, 39%, 5%)
+Nero Astrale	#0D1117	rgb(13, 17, 23)	hsl(220, 30%, 7%)
+Nero Cosmico	#050A13	rgb(5, 10, 19)	hsl(220, 55%, 4%)*/

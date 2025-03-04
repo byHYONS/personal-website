@@ -2,6 +2,8 @@
 
 import { store } from '../store';
 import CanvasBHY from '../components/CanvasComponent.vue';
+import JumboComponent from '../components/JumboComponent.vue';
+import HeroSection from '../components/HeroSectionComponent.vue';
 
 
 export default {
@@ -11,6 +13,8 @@ export default {
   },
   components: {
     CanvasBHY,
+    JumboComponent,
+    HeroSection,
 
   },
   data() {
@@ -26,10 +30,9 @@ export default {
 
 
 <template>
-  <h1 class="ta-center mt-20"> {{ store.text }}</h1>
-  <div class="container-sm">
-    <img src="../../public/favicon/byh.svg" alt="logo">
-  </div>
+
+  <JumboComponent />
+  <HeroSection />
 
 </template>
 

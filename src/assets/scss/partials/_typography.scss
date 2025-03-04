@@ -8,21 +8,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 //? typography:
-body {font-size: 24px;}
+html {font-size: 16px;}
 
 // h1, h2, h3, h4, h5, h6 {font-family: "Spectral", serif;}
 // a, p, li, small, button, form, table {font-family: "Rajdhani", sans-serif;}
 
+// FONTFAMILY:
 h1, h2, h3, h4, h5, h6 {font-family: "Josefin Sans", serif;}
 a, p, li, small, button, form, table {font-family: "Roboto", serif;}
 
-th {font-size: 24px;}
-td {font-size: 20px;}
+// FONTSIZE:
+th {font-size: clamp(1.25rem, 3vw, 1.5rem);}
+td {font-size: clamp(1rem, 2.5vw, 1.25rem);}
 
+p, li, a, form {font-size: clamp(1.25rem, 4vw, 1.5rem);}
 
-h1 {font-size: 4rem;}
-h2 {font-size: 3rem;}
-h3 {font-size: 2rem;}
-h4 {font-size: 1rem;}
-h5 {font-size: 0.8rem;}
-h6 {font-size: 0.6rem;}
+table {font-size: clamp(1.20rem, 4vw, 1.4rem);} 
+
+span {font-size: clamp(1.25rem, 4.5vw, 1.75rem);}
+
+small {font-size: clamp(0.5rem, 2.5vw, 0.6rem);}
+
+h1 {font-size: clamp(3rem, 6vw, 5rem);}
+h2 {font-size: clamp(2rem, 5vw, 3rem);}
+h3 {font-size: clamp(1.75rem, 4.5vw, 2.5rem);}
+h4 {font-size: clamp(1.35rem, 4vw, 1.75rem);}
+h5 {font-size: clamp(1.2rem, 3.5vw, 1.25rem);}
+h6 {font-size: clamp(1rem, 3vw, 1rem);}

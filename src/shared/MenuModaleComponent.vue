@@ -36,7 +36,8 @@ export default {
       <div class="policy">
         <ul>
           <li v-for="(policy, index) in menuLabel.policies" :key="index" @click="closeMenu">
-            <a class="hover-link" :href="`#${policy.toUpperCase()}`" target="_blank" rel="noopener noreferrer" translate="no"> {{ policy }}
+            <a class="hover-link" :href="policy.link" target="_blank" rel="noopener noreferrer" translate="no"> {{
+              policy.name }}
             </a>
           </li>
         </ul>
@@ -58,7 +59,6 @@ export default {
     min-height: 250px;
 
     .policy {
-
 
       ul {
 

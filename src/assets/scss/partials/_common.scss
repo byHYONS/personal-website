@@ -41,10 +41,44 @@ main {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba($color: $footer, $alpha: .7);
+  background-color: rgba($color: $color_01, $alpha: .7);
   z-index: 100;
 }
 
+// testo animato
+.animated-text {
+  background-image: linear-gradient(65deg,
+      hsl(29deg 91% 54% / 0.9) 0%,
+      hsl(11deg 98% 64% / 0.9) 9%,
+      hsl(352deg 92% 64% / 0.9) 18%,
+      hsl(336deg 74% 59% / 0.9) 27%,
+      hsl(313deg 49% 56% / 0.9) 36%,
+      hsl(256deg 56% 67% / 0.9) 45%,
+      hsl(212deg 80% 63% / 0.9) 55%,
+      hsl(195deg 83% 49% / 0.9) 64%,
+      hsl(186deg 100% 41% / 0.9) 73%,
+      hsl(176deg 100% 38% / 0.9) 82%,
+      hsl(155deg 49% 51% / 0.9) 91%,
+      hsl(105deg 39% 57% / 0.9) 100%);
+  background-size: 500% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShine 5s ease-in-out infinite alternate;
+  text-align: center;
+  display: inline-block;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 100% center;
+  }
+}
+
+// BG animato
 .animated-gradient-bg {
   position: fixed;
   top: 0;
@@ -98,7 +132,8 @@ main {
 //? Link ancor o router HOVER-LINK
 .hover-link {
   position: relative;
-  color: $hover-link;
+  color: $color_02;
+
   &:hover {
     opacity: .9;
   }
@@ -108,42 +143,134 @@ main {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -2px; 
+  bottom: -2px;
   width: 0;
-  height: 2px; 
-  background-color: $hover-link;
-  transition: width 0.3s ease; 
+  height: 2px;
+  background-color: $color_02;
+  transition: width 0.3s ease;
 }
 
 .hover-link:hover:after {
-  width: 100%; 
+  width: 100%;
 }
 
 //? link ancor o router pallino HOVER-BALL
 .hover-ball {
-  position: relative; 
+  position: relative;
   text-decoration: none;
-  color: $hover-link;
+  color: $color_02;
+
   &:hover {
     opacity: .9;
   }
 }
 
 .hover-ball:after {
-  content: ''; 
+  content: '';
   position: absolute;
-  top: 50%; 
-  transform: translateY(-50%); 
-  left: calc(100% + 10px); 
-  width: 0; 
-  height: 0; 
-  background: rgb(255,0,0); 
-  background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(254,28,6,1) 62%, rgba(251,164,37,1) 100%); 
-  border-radius: 50%; 
-  transition: all 0.3s ease; 
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% + 10px);
+  width: 0;
+  height: 0;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(45deg, rgba(255, 0, 0, 1) 0%, rgba(254, 28, 6, 1) 62%, rgba(251, 164, 37, 1) 100%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 .hover-ball:hover:after {
-  width: 11px; 
-  height: 11px; 
+  width: 11px;
+  height: 11px;
 }
+
+// ANIMAIONE dal basso verso l'alto:
+.fade-up {
+  opacity: 0;
+  transform: translateY(250px);
+  transition: opacity 2.5s ease-out, transform 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// BOTTONE 
+.explore-btn {
+  margin: 30px 0;
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 8px;
+  padding: 5px 28px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color .2s ease-in-out;
+
+  /* L'icona del cerchio */
+  .circle-icon {
+    width: 50px;
+    height: 50px;
+    left: -1px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .text {
+    position: relative;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    z-index: 2;
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.2em;
+    transform: rotate(-45deg);
+    z-index: 2;
+    transition: transform .2s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    background: $gradient_02;
+    transition: width .2s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &:hover {
+    color: $color_02;
+
+    .arrow {
+      transform: rotate(0deg);
+    }
+
+    &::after {
+      width: 100%;
+      opacity: 1;
+    }
+
+  }
+}
+
+// <button class="explore-btn">
+//   <img src="/public/favicon/ring.svg" alt="icona cerchio" class="circle-icon" />
+//   <span class="text">esplora</span>
+//   <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+// </button>

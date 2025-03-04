@@ -5,15 +5,30 @@
     {
       "image": "../../public/Instagram.svg",
       "class": "instagram",
-      "url": "https://www.instagram.com/byhyons/",
+      "url": "https://www.instagram.com/hyonsrealestate/",
       "name": "Instagram"
     },
     {
       "image": "../../public/github.svg",
       "class": "github",
-      "url": "https://github.com/byHYONS",
+      "url": "https://github.com/byHYONS/",
       "name": "Github"
+    },
+    {
+      "image": "../../public/linkedin.svg",
+      "class": "linkedin",
+      "url": "https://www.linkedin.com/in/samuele-paratore-38b213142/",
+      "name": "linkedin"
     }
   ],
-  "policies": ["Privacy", "Cookie"]
+  "policies": [
+    {
+      "name": "Privacy",
+      "link": "https://www.iubenda.com/privacy-policy/28879186/"
+    },
+    {
+      "name": "Cookie",
+      "link": "https://www.iubenda.com/privacy-policy/28879186/cookie-policy/"
+    }
+  ]
 }
