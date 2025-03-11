@@ -88,7 +88,7 @@ footer {
 
   img {
     width: 150px;
-    margin-left: -10px;
+    margin-left: -8px;
     filter: drop-shadow(5px 5px 5px rgba(86, 83, 83, 0.2));
     transition: .3s;
 
@@ -130,7 +130,8 @@ footer {
     transition: .3s;
 
     img {
-      filter: invert(100) !important;
+      margin-left: 0;
+      filter: invert(100);
     }
 
     &:hover {

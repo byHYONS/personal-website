@@ -2,8 +2,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 //? importiamo le pagine del progetto:
-import HomePage from './pages/HomePage.vue';
-import ContactPage from './pages/ContactPage.vue';
+import HomePage from "./pages/HomePage.vue";
+import ContactPage from "./pages/ContactPage.vue";
+import PolicyPage from "./pages/PolicyPage.vue";
+import NotFound from "./pages/NotFound.vue";
 
 //? creiamo rotte:
 const router = createRouter({
@@ -19,6 +21,16 @@ const router = createRouter({
       name: "contact",
       component: ContactPage,
     },
+    {
+      path: "/privacy-policy",
+      name: "privacyPolicy",
+      component: PolicyPage,
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "NotFound",
+      component: NotFound,
+    },
     // {
     //   path: "/Name/:slug", //? rotta parametrica per il detteglio
     //   name: "detail",
@@ -27,3 +39,4 @@ const router = createRouter({
   ],
 });
 export { router };
+

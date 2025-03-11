@@ -139,7 +139,6 @@ header {
       height: 75px;
 
       .link-logo {
-        padding: 0 25px;
         width: 100%;
         height: 100%;
 

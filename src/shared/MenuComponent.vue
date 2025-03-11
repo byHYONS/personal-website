@@ -70,11 +70,12 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 nav {
-  padding: 0 25px;
+
+  padding-left: 20px;
 
   .modale {
+    display: none;
     position: fixed;
-    opacity: 0;
     top: 155px;
     left: 0;
     right: 0;
@@ -89,6 +90,7 @@ nav {
   }
 
   .modaleOn {
+    display: block;
     opacity: .95;
   }
 
@@ -158,7 +160,7 @@ nav {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   nav {
     .hamb-icon {
       width: 40px;

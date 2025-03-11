@@ -1,8 +1,5 @@
 <script>
-import { store } from '../store.js';
 import { ref, onMounted } from "vue";
-import imagesTransiction from '../components/ImageTransictionComponent.vue';
-import carousel from '../components/CarouselComponent.vue';
 
 export default {
   nome: 'JumboComponent',
@@ -25,28 +22,11 @@ export default {
 
     return { fadeElements };
   },
-  components: {
-    imagesTransiction,
-    carousel,
-  },
-  emits: ["closeModale"],  // componente figlio
-  props: {  // componente figlio
-    nome: String, // Dichiara il tipo della prop
-    eta: Number
-  },
-  emits: ["closeModale"],
   data() {
     return {
-      store,
 
     };
   },
-  methods: {
-
-  },
-  mounted() {
-
-  }
 }
 
 </script>
@@ -64,7 +44,7 @@ export default {
           <h4>geomentra</h4>
           <h1 class="animated-text">Samuele Paratore</h1>
           <hr>
-          <span>Imprenditore Immobiliare, Copywriter, Marketer a 365° <br>
+          <span>Imprenditore Immobiliare, Copywriter, Marketer a 360° <br>
             e FullStack Web Developer...</span>
 
           <button @click="$router.push('/contact')" class="explore-btn my-5">
@@ -85,7 +65,6 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 section {
-  width: 100vw;
   background: $color_01;
   padding-top: 11rem;
 }
@@ -106,6 +85,7 @@ section {
   }
 
   .headline {
+    padding-left: min(38em, 8%);
 
     h1 {
       text-align: start;
@@ -127,6 +107,12 @@ section {
     span {
       color: $color_02;
       font-weight: 100;
+    }
+  }
+
+  @media screen and (min-width: 991px) {
+    .headline {
+      padding: 0 25px;
     }
   }
 }

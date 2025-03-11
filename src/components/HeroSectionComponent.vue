@@ -15,9 +15,9 @@ export default {
 <template>
   <section class="container-fluid hero">
     <!-- prima sezione con foto a destra -->
-    <div class="row align-items-center hero-white">
+    <div class="row hero-white">
       <!-- colonna testo -->
-      <div class="col-12 col-lg-6 text-white px-3 px-md-5 py-5">
+      <div class="col-12 col-lg-6 align-content-center text-content  py-5">
         <h4 class="subheading text-lowercase">imprenditore immobiliare</h4>
         <h2 class="gradient-text">
           brocker titolare e ceo<br />
@@ -31,25 +31,20 @@ export default {
           progetto è una sfida che affronto con passione, unendo tecnologia e relazioni umane. Il
           risultato? Valore concreto per venditori e acquirenti.
         </p>
-        <button class="explore-btn">
-          <img src="/public/favicon/ring.svg" alt="icona cerchio" class="circle-icon" />
-          <span class="text">esplora</span>
-          <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-        </button>
       </div>
       <!-- colonna immagine -->
-      <div class="col-12 col-lg-6 d-flex justify-content-center position-relative img-overlay bdb">
-        <img src="/public/img/immobiliare.webp" alt="donna con tablet" class="image" />
+      <div class="col-12 col-lg-6 position-relative  img-overlay">
+        <img src="/public/img/immobiliare.webp" alt="agente immobiliare" class="image" />
       </div>
     </div>
     <!-- seconda sezione con foto a sinistra -->
-    <div class="row align-items-center hero-black">
+    <div class="row hero-black">
       <!-- Colonna Immagine -->
-      <div class="col-12 col-lg-6 d-flex justify-content-center position-relative img-overlay order-2 order-lg-1">
-        <img src="/public/img/marketing.webp" alt="Donna con tablet" class="image" />
+      <div class="col-12 col-lg-6 position-relative img-overlay order-2 order-lg-1">
+        <img src="/public/img/marketing.webp" alt="rappresentazione del marketing" class="image" />
       </div>
       <!-- colonna testo -->
-      <div class="col-12 col-lg-6 text-white px-3 px-md-5 py-5 order-1 order-lg-2">
+      <div class="col-12 col-lg-6 text-content align-content-center py-5 order-1 order-lg-2">
         <h4 class="subheading text-lowercase">copywriter e marketer a 365&#176</h4>
         <h2 class="gradient-text">
           il potere delle parole<br />
@@ -65,9 +60,9 @@ export default {
       </div>
     </div>
     <!-- terza sezione con foto a destra -->
-    <div class="row align-items-center hero-white">
+    <div class="row hero-white">
       <!-- Colonna Testo -->
-      <div class="col-12 col-lg-6 text-white px-3 px-md-5 py-5">
+      <div class="col-12 col-lg-6 text-content align-content-center py-5">
         <h4 class="subheading text-lowercase">fullstack web developer</h4>
         <h2 class="gradient-text">
           dal front-end dinamico<br />
@@ -83,8 +78,8 @@ export default {
         </p>
       </div>
       <!-- Colonna Immagine -->
-      <div class="col-12 col-lg-6 d-flex justify-content-center position-relative img-overlay">
-        <img src="/public/img/fullstackdev.webp" alt="Donna con tablet" class="image" />
+      <div class="col-12 col-lg-6 position-relative img-overlay">
+        <img src="/public/img/fullstackdev.webp" alt="sviluppatore web" class="image" />
       </div>
     </div>
   </section>
@@ -96,27 +91,28 @@ export default {
 
 .hero {
 
+  /* testo*/
+  .text-content {
+    padding-left: min(38em, 8%);
+    padding-right: min(30em, 8%);
+  }
+
   /* immagine */
   .img-overlay {
     padding: 0;
-    overflow: hidden;
-    position: relative;
   }
 
-  .image {
-
-    img {
-      display: block;
-      max-width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
+  img.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 
     &:hover {
       transform: scale(10%);
     }
   }
+
 
   /* Titolo */
   h2 {
@@ -139,7 +135,6 @@ export default {
 
     /* Descrizione */
     .description {
-      max-width: 500px;
       font-weight: 300;
       color: $color_01;
     }
@@ -149,7 +144,7 @@ export default {
     }
 
     /* sfumatura */
-    .img-overlay::before {
+    .img-overlay::after {
       content: "";
       position: absolute;
       top: 0;
@@ -177,7 +172,6 @@ export default {
 
     /* Descrizione */
     .description {
-      max-width: 500px;
       font-weight: 100;
       color: $color_02;
       margin-bottom: 2rem;
@@ -196,6 +190,16 @@ export default {
 
     }
 
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .hero-white,
+    .hero-black {
+      .img-overlay::after {
+        content: none;
+      }
+    }
   }
 }
 </style>
