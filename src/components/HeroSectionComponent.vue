@@ -45,7 +45,7 @@ export default {
       </div>
       <!-- colonna testo -->
       <div class="col-12 col-lg-6 text-content align-content-center py-5 order-1 order-lg-2">
-        <h4 class="subheading text-lowercase">copywriter e marketer a 365&#176</h4>
+        <h4 class="subheading text-lowercase">copywriter e marketer a 360&#176</h4>
         <h2 class="gradient-text">
           il potere delle parole<br />
           la forza della strategia
@@ -73,7 +73,7 @@ export default {
           funzionalità per offrire soluzioni web complete. <br />Credo nell’innovazione continua e nella cura di ogni
           dettaglio, dall’usabilità all’architettura dei dati. <br />Ogni progetto è un’opportunità per unire creatività
           e
-          performance, garantendo esperienze fluide e sicure. Il mio obiettivo? Far crescere il tuo business sfruttando
+          performance, garantendo esperienze fluide e sicure. Il mio obiettivo? Far crescere il tuo progetto sfruttando
           il potenziale della tecnologia.
         </p>
       </div>
