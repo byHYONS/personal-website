@@ -1,15 +1,28 @@
+require("dotenv").config();
+
 const {onDocumentCreated} = require("firebase-functions/v2/firestore");
 const {initializeApp} = require("firebase-admin/app");
 const nodemailer = require("nodemailer");
 
 initializeApp();
 
-// Configura il transporter di Nodemailer
+// INFO: Configura il transporter GMAIL di Nodemailer
+// const transporter = nodemailer.createTransport({
+//   service: "gmail",
+//   auth: {
+//     user: process.env.EMAIL_USER,
+//     pass: process.env.EMAIL_PASS, // Password per app!
+//   },
+// });
+
+// INFO: Configura il transporter @samueleparatore di Nodemailer
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: process.env.EMAIL_HOST,
+  port: process.env.EMAIL_PORT,
+  secure: true,
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS, // Password per app!
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -40,14 +53,15 @@ exports.sendEmailOnNewMessage = onDocumentCreated(
 
       // Email di conferma all'utente
       const userMailOptions = {
-        from: process.env.EMAIL_USER,
+        from: `"${process.env.NAME_USER}" <${process.env.EMAIL_USER}>`,
         to: data.email, // L'email dell'utente che ha inviato il messaggio
         subject: "Ho ricevuto il tuo messaggio!",
         text:
         `Ciao ${data.name},\n\n` +
-        `Ho ricevuto il tuo messaggio dal form di contaddo del sito web:\n` +
+        `Ho ricevuto il tuo messaggio dal form di contatto del sito web:\n` +
         `samueleparatore.com\n\n` +
-        `Ti ricontatterò il prima possibile, generalmente entro le 24h.\n\n` +
+        `Ti ricontatterò il prima possibile,` +
+        ` generalmente rispondo entro le 24h.\n\n` +
         `Ecco una copia del tuo messaggio:\n` +
         `------------------------------\n` +
         `Nome: ${data.name}\n` +
