@@ -1,11 +1,9 @@
 <script>
-import { store } from '../store.js';
 
 export default {
   name: 'HeroSection',
   data() {
     return {
-      store,
     }
   },
 }
@@ -91,13 +89,11 @@ export default {
 
 .hero {
 
-  /* testo*/
   .text-content {
     padding-left: min(38em, 8%);
     padding-right: min(30em, 8%);
   }
 
-  /* immagine */
   .img-overlay {
     padding: 0;
   }
@@ -113,27 +109,22 @@ export default {
     }
   }
 
-
-  /* Titolo */
   h2 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
   }
 
-  /* Stile della sezione */
   .hero-white {
     background-color: $color_02;
     position: relative;
 
-    /* Sottotitolo */
     .subheading {
       color: $color_01;
       font-weight: 500;
       margin-bottom: 1rem;
     }
 
-    /* Descrizione */
     .description {
       font-weight: 300;
       color: $color_01;
@@ -143,7 +134,6 @@ export default {
       margin-bottom: 0;
     }
 
-    /* sfumatura */
     .img-overlay::after {
       content: "";
       position: absolute;
@@ -153,9 +143,7 @@ export default {
       height: 100%;
       background: linear-gradient(to right, $color_02 0%, rgba($color_02, 0.5) 10%, rgba(0, 0, 0, 0) 80%);
       z-index: 1;
-
     }
-
   }
 
   .hero-black {
@@ -163,21 +151,18 @@ export default {
     background-color: $color_01;
     position: relative;
 
-    /* Sottotitolo */
     .subheading {
       color: $color_02;
       font-weight: 500;
       margin-bottom: 1rem;
     }
 
-    /* Descrizione */
     .description {
       font-weight: 100;
       color: $color_02;
       margin-bottom: 2rem;
     }
 
-    /* sfumatura */
     .img-overlay::after {
       content: "";
       position: absolute;
@@ -187,9 +172,7 @@ export default {
       height: 100%;
       background: linear-gradient(to left, $color_01 0%, rgba($color_01, 0.5) 10%, rgba(0, 0, 0, 0) 80%);
       z-index: 1;
-
     }
-
   }
 
   @media screen and (max-width: 991px) {

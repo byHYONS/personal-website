@@ -141,18 +141,18 @@ export default {
     this.initCanvas();
   },
 }
-
 </script>
 
 
 <template>
-  <section>
 
+  <section>
+    <!-- pagina status 404 -->
     <div class="not-found">
       <canvas ref="canvas"></canvas>
     </div>
-
   </section>
+
 </template>
 
 

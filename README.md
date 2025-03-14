@@ -83,7 +83,7 @@
 
 Questo progetto combina frontend moderno, backend serverless e automazione avanzata, garantendo una soluzione efficiente e scalabile.
 
-### 💡 Prossimi miglioramenti:
+### 💡 Prossimi/possibili miglioramenti:
 
     •	Dashboard per gestire i messaggi ricevuti.
     •	Ulteriore ottimizzazione delle performance.
@@ -93,4 +93,3 @@ Questo progetto combina frontend moderno, backend serverless e automazione avanz
 ### 🌐 Visita il sito: samueleparatore.com
 
 ###### byHYONS©
-

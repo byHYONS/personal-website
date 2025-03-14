@@ -1,13 +1,11 @@
 <script>
 // import:
-import { store } from '../store.js';
 import footerLabel from '../../public/data/appLabels.json';
 
 export default {
   nome: 'Footer',
   data() {
     return {
-      store,
       footerLabel,
     }
   },

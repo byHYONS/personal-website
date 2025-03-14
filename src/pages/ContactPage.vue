@@ -1,8 +1,6 @@
 <script>
-
 import FormContact from '../components/FormContactComponent.vue';
 import GoogleMap from '../components/GoogleMapFrame.vue';
-
 
 export default {
   nome: 'Contact',
@@ -16,11 +14,8 @@ export default {
     FormContact,
     GoogleMap,
   },
-
 }
-
 </script>
-
 
 
 <template>
@@ -30,6 +25,7 @@ export default {
       <div class="title">
       </div>
       <div class="row">
+        <!-- info di contatto -->
         <div class="info col-12 col-md-6 text-center text-md-end">
           <h4>geometra</h4>
           <h2 class="animated-text">Samuele Paratore</h2>
@@ -47,22 +43,21 @@ export default {
             REA varese 372696
           </p>
         </div>
+        <!-- componente form -->
         <div class="message col-12 col-md-6">
           <FormContact />
         </div>
       </div>
     </div>
   </section>
+  <!-- componente mappa -->
   <section class="google-map">
-
     <div class="container-fluid">
       <GoogleMap />
     </div>
-
   </section>
 
 </template>
-
 
 
 <style lang="scss" scoped>
@@ -76,7 +71,6 @@ section.contact-form {
     padding-right: min(38em, 8%);
     color: $color_02;
     font-weight: 300;
-
   }
 }
 
@@ -100,6 +94,5 @@ section.google-map {
       z-index: 1;
     }
   }
-
 }
 </style>

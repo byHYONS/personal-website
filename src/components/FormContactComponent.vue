@@ -134,6 +134,7 @@ export default {
   <div class="form-container pb-5">
     <form @submit.prevent="submitForm">
       <div class="input-group">
+        <!-- campi info utente -->
         <label for="name">Il tuo nome <span>*</span></label>
         <input type="text" id="name" v-model="formData.name" required>
       </div>
@@ -145,10 +146,12 @@ export default {
         <label for="email">La tua email <span>*</span></label>
         <input type="email" id="email" v-model="formData.email" required>
       </div>
+      <!-- campo messaggio -->
       <div class="input-group">
         <label for="message">Il tuo messaggio <span>*</span></label>
         <textarea id="message" v-model="formData.message" rows="4" required></textarea>
       </div>
+      <!-- campo privacy policy -->
       <div class="privacy-check">
         <input type="checkbox" id="privacy" v-model="formData.privacy" required>
         <label for="privacy">
@@ -157,6 +160,7 @@ export default {
           consenso al trattamento dei dati personali. <span>*</span>
         </label>
       </div>
+      <!-- bottone invia -->
       <button type="submit" class="explore-btn my-5" :disabled="isSubmitting">
         <img src="/public/favicon/ring.svg" alt="icona cerchio" class="circle-icon" />
         <span class="text">{{ isSubmitting ? "sto inviando..." : "invia" }}</span>

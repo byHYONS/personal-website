@@ -1,8 +1,6 @@
 <script>
 // import:
-import { store } from '../store';
 import MenuComponent from './MenuComponent.vue';
-
 
 export default {
   name: 'Header',
@@ -12,7 +10,6 @@ export default {
   },
   data() {
     return {
-      store,
       lastScrollTop: 0,
       isNavbarHidden: false,
       scrollTimeout: null,

@@ -1,6 +1,4 @@
 <script>
-
-import { store } from '../store.js';
 import MenuModale from './MenuModaleComponent.vue';
 
 export default {
@@ -10,11 +8,11 @@ export default {
   },
   data() {
     return {
-      store,
       isMenuOpen: false,
     }
   },
   methods: {
+    // comportamento apertura modale
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
 
@@ -41,29 +39,28 @@ export default {
 };
 </script>
 
+
 <template>
 
   <nav aria-label="Navigazione principale">
-    <!--? nav bar -->
+    <!--? humburger icona -->
     <div class="hamb-icon" @click="toggleMenu">
+      <!-- icona tre lineette per apertura -->
       <div class="hamb-line hl-1" :class="{ isHidden: isMenuOpen }"></div>
       <div class="hamb-line hl-2" :class="{ isHidden: isMenuOpen }"></div>
       <div class="hamb-line hl-3" :class="{ isHidden: isMenuOpen }"></div>
-
-      <div class="hamb-close hc-1" :class="{ isVisible: isMenuOpen }">
-      </div>
-      <div class="hamb-close hc-2" :class="{ isVisible: isMenuOpen }">
-      </div>
+      <!-- icona due lineette per chiusura -->
+      <div class="hamb-close hc-1" :class="{ isVisible: isMenuOpen }"></div>
+      <div class="hamb-close hc-2" :class="{ isVisible: isMenuOpen }"></div>
     </div>
-
-    <!-- menu modale -->
+    <!-- menu modale componente-->
     <div class="modale" :class="{ modaleOn: isMenuOpen }">
       <MenuModale @closeModale="toggleMenu" />
     </div>
-
   </nav>
 
 </template>
+
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/common' as *;
@@ -86,14 +83,12 @@ nav {
     background-color: $color_01;
     /*box-shadow: 5px 5px 5px rgba(80, 80, 80, 0.3);*/
     transition: opacity .7s cubic-bezier(0.25, 0.1, 0.25, 1.0);
-
   }
 
   .modaleOn {
     display: block;
     opacity: .95;
   }
-
 
   .hamb-icon {
     position: relative;

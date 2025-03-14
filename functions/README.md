@@ -2,7 +2,7 @@
 
 ## Per le funzioni Firebase, crea un file .env dentro functions/:
 
-```
+```.env
 EMAIL_USER=tuo@email.com
 EMAIL_PASS=tua_password
 EMAIL_DESTINATION=email_destinazione@esempio.com
@@ -87,6 +87,8 @@ _nodemailer è una libreria che useremo per inviare email con Gmail._
 ### 2. Apri il file functions/index.js e sostituiscilo il codice, nel mio caso con questo codice:
 
 ```js
+require("dotenv").config();
+
 const { onDocumentCreated } = require("firebase-functions/v2/firestore");
 const { initializeApp } = require("firebase-admin/app");
 const nodemailer = require("nodemailer");
@@ -190,9 +192,9 @@ Ora ma manca l’account di servizio di Eventarc, che è necessario per il deplo
 
 #### a. Trova l’account di servizio Eventarc
 
-        1.	Vai su Google Cloud IAM: `https://console.cloud.google.com/iam-admin/iam`.
-        2.	Clicca su + Concedi l’accesso.
-        3.	Nel campo Nuovi Principali, cerca un account simile a questo:
+1. Vai su Google Cloud IAM: `https://console.cloud.google.com/iam-admin/iam`.
+2. Clicca su + Concedi l’accesso.
+3. Nel campo Nuovi Principali, cerca un account simile a questo:
 
 ```
 service-<PROJECT_NUMBER>@gcp-sa-eventarc.iam.gserviceaccount.com
@@ -202,13 +204,13 @@ _Sostituisci <PROJECT_NUMBER> con il numero del tuo progetto. Puoi trovarlo nell
 
 #### b. Assegna il ruolo corretto
 
-    	1.	Nel campo “Seleziona un ruolo”, cerca e seleziona:
+1. Nel campo “Seleziona un ruolo”, cerca e seleziona:
 
 ```
 Eventarc Service Agent
 ```
 
-        2. Clicca Salva.
+2. Clicca Salva.
 
 ## FASE 3: Deploy della Cloud Function
 
@@ -251,4 +253,4 @@ firebase deploy --only functions
 
 _Questo invierà solo le Cloud Functions ai server Firebase senza toccare altre configurazioni._
 
-## fime!
+## finito!

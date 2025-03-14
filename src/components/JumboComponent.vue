@@ -3,6 +3,7 @@ import { ref, onMounted } from "vue";
 
 export default {
   nome: 'JumboComponent',
+  // per effetto fade-up
   setup() {
     const fadeElements = ref(null);
 
@@ -33,6 +34,7 @@ export default {
 
 
 <template>
+
   <section>
     <div class="container">
       <div class="row align-items-center">
@@ -41,23 +43,24 @@ export default {
             alt="Samuele Paratore • Imprenditore Immobiliare, Marketer e FullStack Web Developer">
         </div>
         <div ref="fadeElements" class="headline fade-up col-12 col-lg-7">
+          <!-- headline -->
           <h4>geomentra</h4>
           <h1 class="animated-text">Samuele Paratore</h1>
           <hr>
+          <!-- sub-headline -->
           <span>Imprenditore Immobiliare, Copywriter, Marketer a 360° <br>
             e FullStack Web Developer...</span>
-
+          <!-- bottone per invio a contactPage -->
           <button @click="$router.push('/contact')" class="explore-btn my-5">
             <img src="/public/favicon/ring.svg" alt="icona cerchio" class="circle-icon" />
             <span class="text">contattami</span>
             <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
           </button>
         </div>
-
       </div>
-
     </div>
   </section>
+
 </template>
 
 
@@ -72,7 +75,6 @@ section {
 .container {
 
   .image-hero {
-
 
     img {
       width: 70%;

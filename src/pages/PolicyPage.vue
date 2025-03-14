@@ -1,9 +1,9 @@
 <script>
-import { store } from '../store.js';
 import { ref, onMounted } from "vue";
 
 export default {
   nome: 'Policy',
+  // effetto fade-up
   setup() {
     const fadeElements = ref(null);
 
@@ -25,7 +25,6 @@ export default {
   },
   data() {
     return {
-      store,
     };
   },
   methods: {
@@ -45,24 +44,25 @@ export default {
 
 
 <template>
+
   <section>
     <div class="container">
-
+      <!-- titolo pagina -->
       <div ref="fadeElements" class="headline fade-up pt-5">
         <h4>privacy policy</h4>
         <h1 class="animated-text">www.samueleparatore.com</h1>
       </div>
-
-     <div class="privacy">
-      <a href="https://www.iubenda.com/privacy-policy/28879186"
-        class="iubenda-white no-brand iubenda-noiframe iubenda-embed iub-legal-only iubenda-noiframe iub-body-embed"
-        title="Privacy Policy">
-        Privacy Policy
-      </a>
-     </div>
-
+      <!-- contenuto privacy policy -->
+      <div class="privacy">
+        <a href="https://www.iubenda.com/privacy-policy/28879186"
+          class="iubenda-white no-brand iubenda-noiframe iubenda-embed iub-legal-only iubenda-noiframe iub-body-embed"
+          title="Privacy Policy">
+          Privacy Policy
+        </a>
+      </div>
     </div>
   </section>
+
 </template>
 
 
@@ -71,9 +71,9 @@ export default {
 
 section {
   padding-top: 12rem;
+
   .privacy {
     padding: 5rem;
   }
-
 }
 </style>
