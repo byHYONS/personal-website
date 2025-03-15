@@ -14,7 +14,7 @@ export default {
         message: "",
         privacy: false,
       },
-      recaptchaSiteKey: import.meta.env.VITE_KEY_WEBSITE_RECAPTCHA, // Chiave reCAPTCHA dal .env
+      recaptchaSiteKey: import.meta.env.VITE_KEY_WEBSITE_RECAPTCHA,
       isSubmitting: false,
       successMessage: "",
       errorMessage: "",
@@ -219,7 +219,6 @@ export default {
     transition: all 0.3s ease-in-out;
   }
 
-  /* Effetto focus con gradient */
   input:focus,
   textarea:focus {
     outline: none;
@@ -228,13 +227,11 @@ export default {
     border-radius: 8px !important;
   }
 
-  /* Pulsante di invio */
   button {
     color: $color_02;
   }
 }
 
-/* Privacy Checkbox */
 .privacy-check {
   display: flex;
   align-items: flex-start;

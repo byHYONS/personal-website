@@ -7,13 +7,6 @@ import { router } from "./router";
 //? import style scss:
 import "./assets/scss/main.scss";
 
-//? import bootstrap:
-import * as bootstrap from "bootstrap";
-
-//? import typography:
-import "@fontsource/josefin-sans";
-import "@fontsource/roboto";
-
 //? import font-awesome:
 import "@fortawesome/fontawesome-free/js/all.js";
 

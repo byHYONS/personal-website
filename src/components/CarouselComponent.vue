@@ -82,7 +82,7 @@ export default {
 
   .carousel-info {
     text-align: left;
-    color: #897999;
+    color: color_08;
     font-size: 18px;
     font-weight: 800;
     margin-bottom: 6px;
@@ -104,7 +104,7 @@ export default {
     padding: 5px;
     background-color: green;
     border-radius: 50%;
-    color: #ffffff;
+    color: $color_02;
   }
 
   .carousel__prev {
@@ -115,7 +115,7 @@ export default {
     padding: 5px;
     background-color: green;
     border-radius: 50%;
-    color: #ffffff;
+    color: $color_02;
   }
 
 }

@@ -1,6 +1,4 @@
 <script>
-// import:
-import { store } from './store.js';
 import HeaderComponent from './shared/HeaderComponent.vue';
 import FooterComponent from './shared/FooterComponent.vue';
 
@@ -10,15 +8,8 @@ export default {
     HeaderComponent,
     FooterComponent,
   },
-  data() {
-    return {
-      store,
-    }
-  },
 }
-
 </script>
-
 
 
 <template>
@@ -27,11 +18,12 @@ export default {
   <HeaderComponent />
 
   <!--? CONTENT -->
-  <router-view></router-view>
+  <main>
+    <router-view></router-view>
+  </main>
+
   <!--? FOOTER -->
-
   <FooterComponent />
-
 
 </template>
 

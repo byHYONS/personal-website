@@ -4,85 +4,53 @@
 @import './variables';
 
 //? import fonts:
-//@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import "@fontsource/josefin-sans/100.css";
+@import "@fontsource/josefin-sans/400.css";
+@import "@fontsource/josefin-sans/700.css";
+@import "@fontsource/josefin-sans/100-italic.css";
+
+@import "@fontsource/roboto/100.css";
+@import "@fontsource/roboto/200.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/100-italic.css";
+
 
 //? typography:
-html {
-  font-size: 16px;
-}
+html { font-size: 16px; }
 
-// h1, h2, h3, h4, h5, h6 {font-family: "Spectral", serif;}
-// a, p, li, small, button, form, table {font-family: "Rajdhani", sans-serif;}
 
 // FONTFAMILY:
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans", serif;
 }
 
-a,
-p,
-li,
-small,
-button,
-form,
-table {
+a, p, li, small, span, button, form, table {
   font-family: "Roboto", serif;
 }
 
 // FONTSIZE:
-th {
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
-}
+th { font-size: clamp(1.25rem, 3vw, 1.5rem); }
 
-td {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-}
+td { font-size: clamp(1rem, 2.5vw, 1.25rem); }
 
-p,
-li,
-a,
-form {
+p, li, a, form {
   font-size: clamp(1.25rem, 4vw, 1.5rem);
 }
 
-table {
-  font-size: clamp(1.20rem, 4vw, 1.4rem);
-}
+table { font-size: clamp(1.20rem, 4vw, 1.4rem); }
 
-span {
-  font-size: clamp(1.25rem, 4.5vw, 1.75rem);
-}
+span { font-size: clamp(1.25rem, 4.5vw, 1.75rem); }
 
-small {
-  font-size: clamp(0.5rem, 2.5vw, 0.6rem);
-}
+small { font-size: clamp(0.5rem, 2.5vw, 0.6rem); }
 
-h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
-}
+h1 { font-size: clamp(3rem, 6vw, 5rem); }
 
-h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
-}
+h2 { font-size: clamp(2rem, 5vw, 3rem); }
 
-h3 {
-  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
-}
+h3 { font-size: clamp(1.75rem, 4.5vw, 2.5rem); }
 
-h4 {
-  font-size: clamp(1.35rem, 4vw, 1.75rem);
-}
+h4 { font-size: clamp(1.35rem, 4vw, 1.75rem); }
 
-h5 {
-  font-size: clamp(1.2rem, 3.5vw, 1.25rem);
-}
+h5 { font-size: clamp(1.2rem, 3.5vw, 1.25rem); }
 
-h6 {
-  font-size: clamp(1rem, 3vw, 1rem);
-}
+h6 { font-size: clamp(1rem, 3vw, 1rem); }

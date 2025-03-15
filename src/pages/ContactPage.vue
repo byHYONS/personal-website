@@ -70,7 +70,11 @@ section.contact-form {
   .info {
     padding-right: min(38em, 8%);
     color: $color_02;
-    font-weight: 300;
+    font-weight: 100;
+
+    h2 {
+      font-weight: 400;
+    }
   }
 }
 

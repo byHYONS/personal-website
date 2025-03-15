@@ -48,8 +48,10 @@ export default {
           <h1 class="animated-text">Samuele Paratore</h1>
           <hr>
           <!-- sub-headline -->
-          <span>Imprenditore Immobiliare, Copywriter, Marketer a 360° <br>
-            e FullStack Web Developer...</span>
+          <span>
+            Imprenditore Immobiliare, Copywriter, Marketer a 360°
+            e FullStack Web Developer...
+          </span>
           <!-- bottone per invio a contactPage -->
           <button @click="$router.push('/contact')" class="explore-btn my-5">
             <img src="/public/favicon/ring.svg" alt="icona cerchio" class="circle-icon" />
@@ -91,7 +93,12 @@ section {
 
     h1 {
       text-align: start;
-      font-weight: 800;
+      font-weight: 700;
+    }
+
+    span {
+      color: $color_02;
+      font-weight: 100;
     }
 
     h4 {

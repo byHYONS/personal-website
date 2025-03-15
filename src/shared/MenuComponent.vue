@@ -81,7 +81,6 @@ nav {
     min-height: 300px;
     border-radius: 35px;
     background-color: $color_01;
-    /*box-shadow: 5px 5px 5px rgba(80, 80, 80, 0.3);*/
     transition: opacity .7s cubic-bezier(0.25, 0.1, 0.25, 1.0);
   }
 
@@ -155,7 +154,7 @@ nav {
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   nav {
     .hamb-icon {
       width: 40px;

@@ -9,6 +9,7 @@ $color_04: #A426A6;
 $color_05: #D9487D;
 $color_06: #EC5925;
 $color_07: #bcbcbc;
+$color_08: #897999;
 $gadient_01: linear-gradient(65deg,
     hsl(29deg 91% 54% / 0.9) 0%,
     hsl(11deg 98% 64% / 0.9) 9%,
@@ -31,9 +32,6 @@ $gradient_03: linear-gradient(135deg, rgba(153, 145, 47, 1) 0%, rgba(47, 131, 15
   -webkit-text-fill-color: transparent;
 }
 
-
-
-
 //? shodow:
 $shodow: #000;
 $alpha: .3;
@@ -48,12 +46,3 @@ $success: #006622;
 $error: #B30000;
 $success_bg: rgb(0, 179, 0, .3);
 $error_bg: rgb(179, 0, 0, .3);
-
-
-
-/*
-Nero Profondo	#0a0c10	rgb(10, 12, 16)	hsl(220, 23%, 5%)
-Nero Bluastro	#070A0F	rgb(7, 10, 15)	hsl(220, 37%, 4%)
-Nero Notturno	#080B12	rgb(8, 11, 18)	hsl(225, 39%, 5%)
-Nero Astrale	#0D1117	rgb(13, 17, 23)	hsl(220, 30%, 7%)
-Nero Cosmico	#050A13	rgb(5, 10, 19)	hsl(220, 55%, 4%)*/

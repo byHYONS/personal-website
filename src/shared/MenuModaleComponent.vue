@@ -56,6 +56,13 @@ export default {
   color: $color_02;
   padding: 25px 45px;
 
+  hr {
+    border: none;
+    height: 1.5px;
+    background: $gradient_03;
+    margin: 20px 0;
+  }
+
   .top-menu {
     min-height: 250px;
 

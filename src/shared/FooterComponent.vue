@@ -1,5 +1,4 @@
 <script>
-// import:
 import footerLabel from '../../public/data/appLabels.json';
 
 export default {
@@ -14,7 +13,6 @@ export default {
 </script>
 
 
-
 <template>
 
   <footer>
@@ -22,9 +20,10 @@ export default {
       <div class="row text-lg-start text-md-center text-sm-center text-center justify-content-center py-100">
         <div class="col-lg-3 col-md-4 col-sm-6 col-12  w-md-auto my-5 text-md-start text-center">
           <img src="/public/favicon/samuele-paratore-solo-logo.svg" alt="Samuele Paratore solo logo">
-          <small class="legacy d-block mt-3 mx-auto mx-md-0 col-6 col-sm-7 col-md-8">All rights reserved and trademarks
-            registered.
-            The reproduction of any material contained within this website is strictly prohibited.</small>
+          <small class="legacy d-block mt-3 mx-auto mx-md-0 col-6 col-sm-7 col-md-8">
+            All rights reserved and trademarks registered.
+            The reproduction of any material contained within this website is strictly prohibited.
+          </small>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-5">
           <p class=""> <span class="headline">Informazioni:</span> </p>
@@ -54,8 +53,9 @@ export default {
             </div>
           </div>
         </div>
-        <div class="col-lg-12 my-5">
-          <hr class="text-white">
+        <!-- Socket -->
+        <div class="col-lg-12 my-5 socket">
+          <hr>
           <p translate="no" class="mt-35 copyright">All Rights Reserved • byHYONS™ • © 2025</p>
         </div>
       </div>
@@ -65,11 +65,9 @@ export default {
 </template>
 
 
-
 <style lang="scss" scoped>
 // import
 @use '../assets/scss/partials/variables' as *;
-
 
 footer {
   background-color: $color_01;
@@ -149,6 +147,15 @@ footer {
   .linkedin {
     width: 150px;
     margin-top: 15px;
+  }
+
+  .socket {
+    hr {
+      border: none;
+      height: 1.5px;
+      background: $gradient_03;
+      margin: 20px 0;
+    }
   }
 }
 </style>

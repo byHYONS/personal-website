@@ -79,14 +79,12 @@ export default {
   <header>
     <div class="header-float">
       <div class="menubar">
-
         <!-- logo sito -->
         <div class="logo">
           <router-link :to="{ name: 'home' }" class="link-logo">
             <img class="img" src="/public/favicon/samuele-paratore-logo.svg" alt="Logo Samuele Paratore">
           </router-link>
         </div>
-
         <!-- componente per il menu -->
         <MenuComponent />
       </div>
@@ -101,7 +99,6 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 header {
-
 
   .header-float {
     padding: 15px 0;
@@ -186,7 +183,7 @@ header {
   }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   header {
     .header-float {
       .logo {
