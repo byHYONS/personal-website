@@ -1,21 +1,21 @@
 {
-  "logoMenu": "../../public/favicon/paratore-favicon.svg",
+  "logoMenu": "/img/favicon/paratore-favicon.svg",
   "menus": ["Home", "Contact"],
   "socialIcons": [
     {
-      "image": "../../public/Instagram.svg",
+      "image": "/img/instagram.svg",
       "class": "instagram",
       "url": "https://www.instagram.com/hyonsrealestate/",
       "name": "Instagram"
     },
     {
-      "image": "../../public/github.svg",
+      "image": "/img/github.svg",
       "class": "github",
       "url": "https://github.com/byHYONS/",
       "name": "Github"
     },
     {
-      "image": "../../public/linkedin.svg",
+      "image": "/img/linkedin.svg",
       "class": "linkedin",
       "url": "https://www.linkedin.com/in/samuele-paratore-38b213142/",
       "name": "linkedin"

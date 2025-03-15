@@ -136,16 +136,16 @@ footer {
   }
 
   .instagram {
-    width: 170px;
+    width: 130px;
   }
 
   .github {
-    width: 150px;
+    width: 130px;
     margin-top: 10px;
   }
 
   .linkedin {
-    width: 150px;
+    width: 130px;
     margin-top: 15px;
   }
 
