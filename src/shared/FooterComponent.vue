@@ -9,7 +9,6 @@ export default {
     }
   },
 }
-
 </script>
 
 
@@ -31,7 +30,7 @@ export default {
             <span class="fw-normal fs-5">geom. Samuele Paratore</span> <br>
             Varese • ITALY <br>
             info@samueleparatore.com <br>
-            <small>PI 03654740129 • REA VA 372696</small>
+            <small>PI 0365&#8203;4740129 • REA VA 372696</small>
           </p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-5">

@@ -44,7 +44,7 @@ export default {
         </div>
         <div ref="fadeElements" class="headline fade-up col-12 col-lg-7">
           <!-- headline -->
-          <h4>geomentra</h4>
+          <h4>geometra</h4>
           <h1 class="animated-text">Samuele Paratore</h1>
           <hr>
           <!-- sub-headline -->

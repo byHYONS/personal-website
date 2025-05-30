@@ -39,8 +39,8 @@ export default {
             +39 380 2073007
           </p>
           <p class="my-5">
-            PI 03654740129 <br>
-            REA varese 372696
+            PI 0365&#8203;4740129 <br>
+            REA VA 372696
           </p>
         </div>
         <!-- componente form -->
