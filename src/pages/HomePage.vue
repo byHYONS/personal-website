@@ -3,7 +3,7 @@ import JumboComponent from '../components/JumboComponent.vue';
 import HeroSection from '../components/HeroSectionComponent.vue';
 
 export default {
-  nome: 'Home',
+  name: 'Home',
   components: {
     JumboComponent,
     HeroSection,

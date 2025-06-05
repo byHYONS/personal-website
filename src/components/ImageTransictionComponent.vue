@@ -1,7 +1,7 @@
 <script>
 
 export default {
-  nome: 'ImagesTransiction',
+  name: 'ImagesTransiction',
   components: {
 
   },

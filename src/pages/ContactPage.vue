@@ -3,7 +3,7 @@ import FormContact from '../components/FormContactComponent.vue';
 import GoogleMap from '../components/GoogleMapFrame.vue';
 
 export default {
-  nome: 'Contact',
+  name: 'Contact',
 
   data() {
     return {

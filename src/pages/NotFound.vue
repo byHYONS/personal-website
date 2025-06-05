@@ -1,7 +1,7 @@
 <script>
 
 export default {
-  nome: 'NotFound',
+  name: 'NotFound',
   data() {
     return {
     };

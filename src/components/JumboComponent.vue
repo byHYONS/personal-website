@@ -2,7 +2,7 @@
 import { ref, onMounted } from "vue";
 
 export default {
-  nome: 'JumboComponent',
+  name: 'JumboComponent',
   // per effetto fade-up
   setup() {
     const fadeElements = ref(null);

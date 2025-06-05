@@ -1,6 +1,6 @@
 <script>
 export default {
-  nome: 'Google IFrame',
+  name: 'Google IFrame',
 }
 </script>
 <!-- HTML -->

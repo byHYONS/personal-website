@@ -2,7 +2,7 @@
 import { Carousel, Navigation, Slide } from 'vue3-carousel';
 
 export default {
-  nome: 'Carousel',
+  name: 'Carousel',
   components: {
     Carousel,
     Navigation,

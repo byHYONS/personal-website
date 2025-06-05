@@ -2,7 +2,7 @@
 import { ref, onMounted } from "vue";
 
 export default {
-  nome: 'Policy',
+  name: 'Policy',
   // effetto fade-up
   setup() {
     const fadeElements = ref(null);
