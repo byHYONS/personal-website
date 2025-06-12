@@ -82,7 +82,7 @@ export default {
 
   .carousel-info {
     text-align: left;
-    color: color_08;
+    color: $color_08;
     font-size: 18px;
     font-weight: 800;
     margin-bottom: 6px;
