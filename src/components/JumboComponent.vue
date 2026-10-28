@@ -23,11 +23,6 @@ export default {
 
     return { fadeElements };
   },
-  data() {
-    return {
-
-    };
-  },
 }
 
 </script>
@@ -39,7 +34,7 @@ export default {
     <div class="container">
       <div class="row align-items-center">
         <div class="image-hero col-md-5 d-none d-lg-block">
-          <img class="img" src="/public/img/samuele-paratore.webp"
+          <img class="img" src="/img/samuele-paratore.webp"
             alt="Samuele Paratore • Imprenditore Immobiliare, Marketer e FullStack Web Developer">
         </div>
         <div ref="fadeElements" class="headline fade-up col-12 col-lg-7">
@@ -54,7 +49,7 @@ export default {
           </span>
           <!-- bottone per invio a contactPage -->
           <button @click="$router.push('/contact')" class="explore-btn my-5">
-            <img src="/public/favicon/ring.svg" alt="icona cerchio" class="circle-icon" />
+            <img src="/favicon/ring.svg" alt="icona cerchio" class="circle-icon" />
             <span class="text">contattami</span>
             <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
           </button>
@@ -96,11 +91,6 @@ section {
       font-weight: 700;
     }
 
-    span {
-      color: $color_02;
-      font-weight: 100;
-    }
-
     h4 {
       color: $color_02;
       font-weight: 400;
@@ -111,6 +101,10 @@ section {
       height: 1.5px;
       background: $gradient_03;
       margin: 20px 0;
+    }
+
+    .explore-btn .arrow {
+    font-size: 1.3rem;
     }
 
     span {

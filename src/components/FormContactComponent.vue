@@ -34,7 +34,6 @@ export default {
       this.successMessage = "";
       this.errorMessage = "";
       this.showMessages = false;
-      this.fadeOut = false;
 
       try {
         // 2. Carichiamo reCAPTCHA se non è già presente
@@ -162,7 +161,7 @@ export default {
       </div>
       <!-- bottone invia -->
       <button type="submit" class="explore-btn my-5" :disabled="isSubmitting">
-        <img src="/public/favicon/ring.svg" alt="icona cerchio" class="circle-icon" />
+        <img src="/favicon/ring.svg" alt="icona cerchio" class="circle-icon" />
         <span class="text">{{ isSubmitting ? "sto inviando..." : "invia" }}</span>
         <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
       </button>
@@ -188,6 +187,10 @@ export default {
 
 .form-container {
 
+  .explore-btn .arrow {
+  font-size: 1.3rem;
+  }
+
   .input-group {
     display: flex;
     flex-direction: column;
@@ -204,7 +207,7 @@ export default {
       background-clip: text;
       -webkit-text-fill-color: transparent;
       vertical-align: top;
-      font-size: clamp(1rem, 3vw, 1rem);
+      font-size: 1rem;
     }
   }
 
@@ -214,7 +217,7 @@ export default {
     border: 2px solid $color_02;
     color: $color_02;
     padding: 10px;
-    font-size: clamp(1rem, 3vw, 1rem);
+    font-size: clamp(1rem, 3vw, 1.25rem);
     border-radius: 8px !important;
     transition: all 0.3s ease-in-out;
   }
@@ -228,7 +231,11 @@ export default {
   }
 
   button {
-    color: $color_02;
+    span {
+      color: $color_02;
+      font-weight: 100;
+    }
+
   }
 }
 
