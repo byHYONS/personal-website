@@ -149,7 +149,8 @@ export default {
   <section>
     <!-- pagina status 404 -->
     <div class="not-found">
-      <canvas ref="canvas"></canvas>
+      <h1 class="sr-only">Errore 404 - Pagina non trovata</h1>
+      <canvas ref="canvas" aria-hidden="true"></canvas>
     </div>
   </section>
 
@@ -160,6 +161,18 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 section {
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
   .not-found {
     padding-top: 12rem;
