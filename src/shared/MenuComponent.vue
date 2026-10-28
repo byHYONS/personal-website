@@ -44,7 +44,14 @@ export default {
 
   <nav aria-label="Navigazione principale">
     <!--? humburger icona -->
-    <div class="hamb-icon" @click="toggleMenu">
+    <button
+    type="button"
+    class="hamb-icon"
+    @click="toggleMenu"
+    :aria-expanded="isMenuOpen"
+    aria-controls="menu-principale"
+    :aria-label="isMenuOpen ? 'Chiudi menu' : 'Apri menu'"
+    >
       <!-- icona tre lineette per apertura -->
       <div class="hamb-line hl-1" :class="{ isHidden: isMenuOpen }"></div>
       <div class="hamb-line hl-2" :class="{ isHidden: isMenuOpen }"></div>
@@ -52,9 +59,13 @@ export default {
       <!-- icona due lineette per chiusura -->
       <div class="hamb-close hc-1" :class="{ isVisible: isMenuOpen }"></div>
       <div class="hamb-close hc-2" :class="{ isVisible: isMenuOpen }"></div>
-    </div>
+    </button>
     <!-- menu modale componente-->
-    <div class="modale" :class="{ modaleOn: isMenuOpen }">
+    <div
+      id="menu-principale"
+      class="modale"
+      :class="{ modaleOn: isMenuOpen }"
+    >
       <MenuModale @closeModale="toggleMenu" />
     </div>
   </nav>
@@ -90,6 +101,11 @@ nav {
   }
 
   .hamb-icon {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    font: inherit;
     position: relative;
     height: 40px;
     width: 50px;
@@ -131,7 +147,7 @@ nav {
       background-color: $color_02;
       color: $color_02;
       border-color: $color_02;
-      transition: transform .5s cubic-bezier(0.25, 0.1, 0.25, 1.0),
+      transition: transform .5s cubic-bezier(0.25, 0.1, 0.25, 1.0);
     }
 
     .isHidden {

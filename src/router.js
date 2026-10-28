@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound.vue";
 //? creiamo rotte:
 const router = createRouter({
   history: createWebHistory(),
+  scrollBehavior() {return { top: 0 };},
   routes: [
     {
       path: "/",
