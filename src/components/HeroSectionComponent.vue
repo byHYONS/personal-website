@@ -26,8 +26,8 @@ export default {
           immobili con tecniche innovative e un approccio diretto. <br />Con 10 anni di esperienza alle spalle, ho
           affinato la
           capacità di individuare le opportunità del mercato e massimizzare il potenziale di ogni proprietà. <br />Ogni
-          progetto è una sfida che affronto con passione, unendo tecnologia e relazioni umane. Il
-          risultato? Valore concreto per venditori e acquirenti.
+          progetto è una sfida che affronto con passione, unendo tecnologia e relazioni umane. <br /><strong>Il risultato?</strong> 
+          Valore concreto per venditori e acquirenti.
         </p>
       </div>
       <!-- colonna immagine -->
@@ -53,7 +53,7 @@ export default {
           di vendita. <br />Il mio approccio mette al centro i bisogni del pubblico, parlando alla mente e al cuore del
           cliente. <br />Dallo storytelling emozionale al copy persuasivo, ogni testo è progettato per catturare
           l’attenzione
-          e convertire. La mia missione? Dare voce alle tue idee e tradurle in risultati tangibili.
+          e convertire. <br /><strong>La mia missione?</strong> Dare voce alle tue idee e tradurle in risultati tangibili.
         </p>
       </div>
     </div>
@@ -67,12 +67,11 @@ export default {
           al back-end scalabile
         </h2>
         <p class="description">
-          Dalla creazione di interfacce responsive con Vue.js allo sviluppo di robuste API in Laravel, coniugo design e
-          funzionalità per offrire soluzioni web complete. <br />Credo nell’innovazione continua e nella cura di ogni
-          dettaglio, dall’usabilità all’architettura dei dati. <br />Ogni progetto è un’opportunità per unire creatività
-          e
-          performance, garantendo esperienze fluide e sicure. Il mio obiettivo? Far crescere il tuo progetto sfruttando
-          il potenziale della tecnologia.
+          Dallo sviluppo di interfacce responsive con Vue.js alle API in Laravel, dalle applicazioni desktop con Rust e Tauri
+          alle automazioni in Python, realizzo soluzioni software complete, funzionali e performanti. <br />
+          Credo nell’innovazione continua e nella cura di ogni dettaglio, dall’usabilità alla qualità del codice. <br />Ogni progetto
+          è un’opportunità per unire creatività e tecnologia. <br />
+          <strong>Il mio obiettivo?</strong> Far crescere il tuo progetto sfruttando il potenziale della tecnologia.
         </p>
       </div>
       <!-- Colonna Immagine -->
