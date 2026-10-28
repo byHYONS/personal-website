@@ -18,7 +18,7 @@ export default {
       <div class="col-12 col-lg-6 align-content-center text-content  py-5">
         <h4 class="subheading text-lowercase">imprenditore immobiliare</h4>
         <h2 class="gradient-text">
-          brocker titolare e ceo<br />
+          broker titolare e ceo<br />
           di hyons real estate
         </h2>
         <p class="description">

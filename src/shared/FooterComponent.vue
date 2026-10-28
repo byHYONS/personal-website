@@ -42,7 +42,7 @@ export default {
           </ul>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-5">
-          <p class=""> <span class="headline">Saguimi Su:</span> </p>
+          <p class=""> <span class="headline">Seguimi Su:</span> </p>
           <div class="d-flex flex-wrap justify-content-center  justify-content-lg-start gap-3"
             v-for="(social, index) in footerLabel.socialIcons" key="index">
             <div class="logo-social" :class="social.class">
@@ -55,7 +55,7 @@ export default {
         <!-- Socket -->
         <div class="col-lg-12 my-5 socket">
           <hr>
-          <p translate="no" class="mt-35 copyright">All Rights Reserved • byHYONS™ • © 2025</p>
+          <p translate="no" class="mt-35 copyright">All Rights Reserved • byHYONS™ • © 2026</p>
         </div>
       </div>
     </div>
