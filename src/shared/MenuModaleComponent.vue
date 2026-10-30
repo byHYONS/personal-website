@@ -37,7 +37,7 @@ export default {
         <!-- menu policy -->
         <ul>
           <li v-for="(policy, index) in menuLabel.policies" :key="index" @click="closeMenu">
-            <a class="hover-link" :href="policy.link" target="_blank" rel="noopener noreferrer" translate="no">
+            <a class="hover-link" :href="policy.link" rel="noopener noreferrer" translate="no">
               {{ policy.name }}
             </a>
           </li>

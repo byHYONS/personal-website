@@ -24,11 +24,11 @@
   "policies": [
     {
       "name": "Privacy",
-      "link": "https://www.iubenda.com/privacy-policy/28879186/"
+      "link": "/privacy-policy"
     },
     {
       "name": "Cookie",
-      "link": "https://www.iubenda.com/privacy-policy/28879186/cookie-policy/"
+      "link": "/cookie-policy"
     }
   ]
 }

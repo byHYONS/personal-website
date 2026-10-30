@@ -154,9 +154,14 @@ export default {
       <div class="privacy-check">
         <input type="checkbox" id="privacy" v-model="formData.privacy" required>
         <label for="privacy">
-          Ho preso visione della <router-link :to="{ name: 'privacyPolicy' }">Privacy
-            Policy</router-link> e do il
-          consenso al trattamento dei dati personali. <span>*</span>
+          Ho preso visione della 
+          <router-link
+            :to="{ name: 'privacyPolicy' }"
+            target="_blank"
+            rel="noopener noreferrer"> 
+            Privacy Policy
+          </router-link> 
+          e do il consenso al trattamento dei dati personali. <span>*</span>
         </label>
       </div>
       <!-- bottone invia -->

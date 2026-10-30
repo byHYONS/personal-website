@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./pages/HomePage.vue";
 import ContactPage from "./pages/ContactPage.vue";
 import PolicyPage from "./pages/PolicyPage.vue";
+import CookiePage from "./pages/CookiePage.vue";
 import NotFound from "./pages/NotFound.vue";
 
 //? creiamo rotte:
@@ -27,10 +28,15 @@ const router = createRouter({
       name: "privacyPolicy",
       component: PolicyPage,
     },
+    {    
+      path: "/cookie-policy",
+      name: "cookiePolicy",
+      component: CookiePage,
+    },
     {
       path: "/:pathMatch(.*)*",
       name: "NotFound",
-      component: NotFound,
+      component: NotFound
     },
     // {
     //   path: "/Name/:slug", //? rotta parametrica per il detteglio
